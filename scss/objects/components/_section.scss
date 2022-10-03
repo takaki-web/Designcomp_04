@@ -1,0 +1,12 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+.c-section {
+  padding-top: 20px;
+}
+@include m.mq(pc) {
+  .c-section {
+    padding-top: 30px;
+  }
+}
