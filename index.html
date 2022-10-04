@@ -74,7 +74,7 @@
         </h1>
         <!-- /.l-index-header__title -->
         <div class="l-index-header__Breadcrumb">
-          <span>HOME</span>> スタッフ紹介
+          <a href="http://"> <span>HOME</span>></a> スタッフ紹介
         </div>
         <!-- /.l-index-header__Breadcrumb -->
       </div>
@@ -82,14 +82,18 @@
     </header>
 
     <main class="l-index-main">
-      <section class="l-index-fv c-section">
-        <div class="c-section__inner">
-          <div class="p-index-fv__img-wrapper"></div>
-          <!-- /.p-index-fv__img-wrapper -->
-        </div>
-        <!-- /.c-section__inner -->
+      <section class="p-index-fv c-section">
+        <picture class="p-index-fv__img-wrapper">
+          <source
+            media="(min-width:641px)"
+            srcset="img/pc/mv-pc.jpg 1x, img/pc/mv-pc.jpg 2x"
+          />
+          <img loading='lazy' src=img/sp/mv-sp.jpg srcset=' img/sp/mv-sp.jpg 1x,
+          img/sp/mv-sp.jpg 2x ' alt='fv' />
+        </picture>
+        <!-- /p-index-fv__img-wrapper -->
       </section>
-      <!-- /.l-index-fv -->
+      <!-- /.p-index-fv -->
     </main>
     <!-- /.l-index-main -->
 
