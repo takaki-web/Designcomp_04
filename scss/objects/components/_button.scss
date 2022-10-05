@@ -4,39 +4,47 @@
 
 .c-button {
   display: block;
-  position: absolute;
-  width: 190px;
-  height: 36px;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 240px;
+  height: 44px;
   font-weight: bold;
-  font-size: 1.4rem;
-  background-color: import.$color-btn;
-  border-radius: 6px;
+  font-size: 1.3rem;
+  background-color: import.$color-lightgreen;
+  border-radius: 12px;
   color: import.$color-white;
-  padding: 12px 21.1px 7px 38px;
-  right: 1%;
-  margin-top: 10px;
-  &::before{
-    border-right: 2px solid #fff;
-    border-top: 2px solid #fff;
-    bottom: 0;
+  padding: 13px 21.33px 11px 44px;
+  &::before {
     content: "";
-    height: 10px;
-    margin: auto;
     position: absolute;
-    right: 26px;
-    top: 0;
-    transform: rotate(45deg);
-    width: 10px;
+    bottom: 20.5px;
+    right: 32.17px;
+    width: 25.5px;
+    height: 1px;
+    background: import.$color-white;
+    transition: all 0.3s;
   }
-  &:hover{
-    background-color: import.$color-btn;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 22.5px;
+    right: 31.17px;
+    width: 7px;
+    height: 1px;
+    background: import.$color-white;
+    transform: rotate(25deg);
+    transition: all 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  &:hover {
+    background-color: import.$color-lightgreen;
     filter: brightness(150%);
-    }
+  }
 }
 
-@include m.mq(pc) {
-  .c-button {
-    position: absolute;
-    right:20px;
-}
-}
