@@ -7,7 +7,6 @@
 @use "./layouts/header";
 @use "./layouts/footer";
 // コンポーネント(再利用可能なCSS)
-@use "./objects/components/button";
 // プロジェクト(ページごとの固有CSS)
 @use "./objects/projects/fv";
 @use "./objects/projects/introduction";
