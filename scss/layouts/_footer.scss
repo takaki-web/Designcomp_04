@@ -41,8 +41,30 @@
     width: 241px;
   }
   .l-index-footer__copyright{
-    margin-top: 35px;
     font-size: 1.2rem;
+    width: 100%;
+    max-width: 281px;
+    margin: 0 auto;
+    margin-top: 35px;
+    position: relative;
   }
     }
 
+    @include m.mq(pc) {
+      .l-index-footer {
+        height: 246px;
+        padding-top: 49px;
+        .l-index-footer__content-wrapper{
+          width: 100%;
+          max-width: 1020px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: space-between;
+          gap: 1ch;
+        }
+        .l-index-footer__company-wrapper{
+          margin: 0;
+          }
+          }
+          }
