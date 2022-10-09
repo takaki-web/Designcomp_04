@@ -6,6 +6,8 @@
 // レイアウト
 @use "./layouts/header";
 @use "./layouts/footer";
+@use "./layouts/sidebar";
+@use "./layouts/main";
 // コンポーネント(再利用可能なCSS)
 // プロジェクト(ページごとの固有CSS)
 @use "./objects/projects/fv";
