@@ -2,7 +2,7 @@
 @use "../mixin" as m;
 
 @include m.mq(pc) {
-	.l-index-main{
+	.l-main{
 		display: flex;
 		flex-direction: row;
 	}

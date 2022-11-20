@@ -3,11 +3,11 @@
 // Base (Mobile First)
 
 // headerセクション
-.l-index-header {
-  .l-index-header__content-wrapper{
+.l-header {
+  .l-header__content-wrapper{
     margin-top: 30px;
   }
-  .l-index-header__title{
+  .l-header__title{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
       transform:scale(1.35,1.35);
     }
   }
-  .l-index-header__Breadcrumb{
+  .l-header__Breadcrumb{
     margin-left: 30px;
     font-size: 1.1rem;
     line-height: 1.81;
@@ -30,14 +30,14 @@
 }
 
 @include m.mq(pc) {
-  .l-index-header {
-    .l-index-header__content-wrapper{
+  .l-header {
+    .l-header__content-wrapper{
       margin-top: 44px;
       display: flex;
       flex-direction: row;
       justify-content:space-between;
     }
-    .l-index-header__title{
+    .l-header__title{
       display: block;
       margin-left: 23vw;
       padding-bottom: 43px;
@@ -45,7 +45,7 @@
         transform:scale(1.8,1.8);
       }
     }
-    .l-index-header__button{
+    .l-header__button{
         display: block;
         display: flex;
         flex-direction: column;
@@ -74,7 +74,7 @@
           filter: brightness(150%);
         }
     }
-    .l-index-header__Breadcrumb{
+    .l-header__Breadcrumb{
       margin-left: 18vw;
       font-size: 1.1rem;
       line-height: 1.81;

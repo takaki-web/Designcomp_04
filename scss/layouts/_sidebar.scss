@@ -2,26 +2,26 @@
 @use "../mixin" as m;
 
 @include m.mq(pc) {
-	.l-index-sidebar{
+	.l-sidebar{
 		width: 258px;
 		margin-right: 18.5vw;
-		.l-index-sidebar__title{
+		.l-sidebar__title{
 			font-size: 2.4rem;
 			font-weight: bold;
 			padding-bottom: 16px;
 		}
-		.l-index-sidebar__wrapper{
+		.l-sidebar__wrapper{
 			display: flex;
 			flex-direction: row;
 			border-bottom: 1px dashed import.$color-gray2;
 			padding-top:23.5px;
 			padding-bottom: 23.5px;
 		}
-		.l-index-sidebar__wrapper:nth-child(2){
+		.l-sidebar__wrapper:nth-child(2){
 			border-top: 1px dashed import.$color-gray2;
 		}
 
-		.l-index-sidebar__img-wrapper{
+		.l-sidebar__img-wrapper{
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -43,11 +43,11 @@
 					transform: translateY(1px);
 				}
 		}
-		.l-index-sidebar__text{
+		.l-sidebar__text{
 			font-size: 1.3rem;
 			line-height: 1.5;
 		}
-		.l-index-sidebar__date{
+		.l-sidebar__date{
 			font-size: 1.1rem;
 		}
 	}
