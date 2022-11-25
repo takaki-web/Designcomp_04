@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix="og:http://ogp.me/ns#">
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--検索エンジンの対象外にする-->
     <meta name="robots" content="noindex,nofollow" />
     <!-- サイトのタイトル -->
-    <title>テルースプロダクション</title>
+    <title>テルース　プロダクション</title>
+    <!-- サイトの説明文 -->
+    <meta
+      name="description"
+      content="プロダクションの優秀なスタッフです。"
+    />
+    <!-- ページのタイトル -->
+    <meta property="og:title" content="テルース　プロダクション" />
+    <!-- ページの説明文 -->
+    <meta
+      property="og:description"
+      content="プロダクションの優秀なスタッフです。"
+    />
+    <!-- ページのURL -->
+    <meta property="og:url" content="本番環境の絶対パスを入れる" />
+    <!-- サムネイル画像のURL 1200*630-->
+    <meta property="og:image" content="/img/thumbnail.png" />
+    <!-- サイトの名前 -->
+    <meta property="og:site_name" content="テルース　プロダクション" />
     <!-- サイトの種類 -->
     <meta property="og:type" content="website" />
     <!-- サイトの言語情報 -->
     <meta property="og:locale" content="ja_JP" />
+    <!-- レガシーブラウザ用のfavicon.ico 32×32-->
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+    <!-- Appleデバイス用の180×180のPNGアイコン -->
     <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
     />
-    <!-- reset.css destyle -->
+    <!-- Androidデバイス用の192×192と512×512のPNGアイコンを含むWebアプリマニフェスト -->
+    <link rel="manifest" href="/img/webmanifest.json" />
+    <!-- reset.css リセットstyle -->
     <link rel="stylesheet" href="/css/destyle.css" />
     <!-- commoncss読み込み-->
     <link rel="stylesheet" href="/css/common.css" />
