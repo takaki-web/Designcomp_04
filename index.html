@@ -107,13 +107,23 @@
     </header>
 
       <section class="p-index-fv c-section">
-        <picture class="p-index-fv__img-wrapper">
-          <source
-            media="(min-width:641px)"
-            srcset="img/pc/mv-pc.webp 1x, img/pc/mv-pc.webp 2x"
-          />
-          <img loading='lazy' src=img/sp/mv-sp.webp srcset=' img/sp/mv-sp.webp 1x,
-          img/sp/mv-sp.webp 2x ' alt='fv' />
+        <picture class='p-index-fv__img-wrapper'>
+        <source
+        type='image/webp'
+        media='(min-width:1250px)'
+        srcset='img/pc/mv-pc.webp 1x,img/pc/mv-pc@2x.webp 2x'
+        width='1600' height='500'
+        />
+        <source
+        type='image/webp'
+        srcset='img/sp/mv-sp.webp 1x,img/sp/mv-sp@2x.webp 2x'
+        width='375' height='400'
+        />
+        <img
+        src=img/sp/mv-sp.webp
+        alt='fv'
+        width='375' height='400'
+        />
         </picture>
         <!-- /p-index-fv__img-wrapper -->
       </section>
